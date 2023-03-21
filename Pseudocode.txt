@@ -1,0 +1,57 @@
+Pseudocode
+Algoritma Program_Kasir
+{untuk menghitung jumlah barang yang dibeli}
+
+Deklarasi
+Namabarang: char ;
+kodebarang, jumlahbarang, hargabarang: Integer;
+hargadiskon, totalharga, uangkembalian, pembayaran: Double;
+status : Boolean True
+
+Deskripsi
+Begin
+while(ulang)
+write("Selamat Datang di Flores mart");
+write("Jalan Woloare B");
+while (status = true){
+writeln("Silakan scan kodebarang : ");
+read(kodebarang);
+if (kodebarang terbaca) then
+write("Nama Barang");
+hargabarang ;
+else
+Write(" Kesalahan Input Data ");
+status = false; break; end if
+while(status=true)
+writeln("Silakan Masukkan Jumlah Barang : ");
+read(jumlahbarang);
+totalharga =(double)(hargabarang*jumlahbarang);
+write("Total Harga : "+totalharga);
+status = true ; end if
+while(status=true)
+if (total harga >= 100000)then
+Write("Anda Mendapatkan Diskon 5 %");
+hargadiskon=totalharga-(totalharga*0.05);
+Write("Jumlah Belanja Anda Setelah Diskon Adalah "+hargadiskon);
+Writeln(" pembayaran harga diskon =");
+read(Pembayaran);
+else
+while(status=true)
+writeln(" Uang Yang Di Bayar =");
+read(pembayaran);
+uangkembalian = pembayaran - jumlahseluruhnya;
+write("Kembalian = Rp "+uangkembalian+ " ");
+end if
+write(" Apakah Anda Ingin Melakukan Transaksi Baru ? ");
+write(" Tekan 1 Jika Anda Ingin Melakukan Transaksi");
+write(" Tekan 2 Jika Anda Tidak Melakukan Transaksi ");
+read(jawaban) =;
+
+if (jawaban == 1)then
+ulang = true ;
+end if
+else if(jawaban==2)
+System.out.print("Terima Kasih Atas Kunjungan Anda");
+break;
+end if
+end                                
